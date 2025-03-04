@@ -81,3 +81,11 @@ th.third {
 tbody tr:nth-child(even) {
     background-color: #f1f1f1;
 }
+
+.profile-pic {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%; 
+    width: 150px; 
+    height: 150px; 
+}
