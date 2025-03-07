@@ -13,6 +13,7 @@ html, body {
 
 body {
     float: left;
+    color: (0,100,0);
 }
 
 h1 {
@@ -30,7 +31,7 @@ h3 {
 h1,h2,h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 4000;
-    margin: 10px;
+    margin: 15px;
 }
 
 .content {
@@ -40,14 +41,18 @@ h1,h2,h3 {
 
 .sidebar {
     float: left;
+    height: auto;
+    ;
     width: 33.3333%;
-    background-color: #f1f1f1;
+    background-color: #f1f8e9; 
 }
 
 .image-large {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 5px solid #9CAF88;
+    border-color: #9CAF88;
     border-radius: 25px;
     max-width: 60%;
     height: auto;
@@ -57,13 +62,13 @@ table {
     border: 1px solid #ccc;
     border-collapse: collapse;
     border-spacing: 0;
-    width: 100%;
+    width: 95%;
     display: table;
 }
 
 thead {
     color: #fff;
-    background-color: mediumpurple;
+    background-color: #9CAF88;
 }
 
 tr {
@@ -88,6 +93,8 @@ tbody tr:nth-child(even) {
 .profile-pic {
     display: block;
     margin: auto;
-    width: 200px;
-    height: 350px;
+    border: 5px solid #9CAF88;;
+    border-color: #9CAF88;;
+    width: 300px;
+    height: 500px;
 }
