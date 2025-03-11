@@ -1,0 +1,75 @@
+
+body {
+    font-family: 'Pirata One', cursive;
+    background: url('parchment.jpg') center/cover no-repeat;
+    color: #4b2c20;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: url('wood-texture.png') center/cover no-repeat;
+    padding: 20px;
+    font-size: 24px;
+    color: #FFD59A;
+    text-shadow: 2px 2px 5px black;
+}
+
+.intro {
+    font-size: 18px;
+    padding: 15px;
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    border: 5px solid #4b2c20;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: rotate(-5deg);
+}
+
+.layout-links {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 10px;
+}
+
+.layout-links .links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.layout-links a {
+    text-decoration: none;
+    background: #654321;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.layout-links a:hover {
+    transform: scale(1.1) rotate(3deg);
+}

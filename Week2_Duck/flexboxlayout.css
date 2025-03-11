@@ -1,13 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #FFD59A;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #ffcc00;
+    background: url('wood-texture.png') center/cover no-repeat;
+    font-size: 24px;
+    color: white;
     padding: 20px;
 }
 
@@ -28,7 +30,36 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Animation */
 .flex-container section:hover {
     transform: scale(1.1);
+}
+
+.duck-image {
+    width: 100%;
+    border-radius: 8px;
+    animation: spin 5s linear forwards, wiggle 0.5s ease-in-out 5s infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes wiggle {
+    0%, 7% { transform: rotateZ(0); }
+    15% { transform: rotateZ(-5deg); }  /* Reduced wiggle */
+    20% { transform: rotateZ(3deg); }   /* Reduced wiggle */
+    25% { transform: rotateZ(-3deg); }  /* Reduced wiggle */
+    30% { transform: rotateZ(2deg); }   /* Reduced wiggle */
+    35% { transform: rotateZ(-1deg); }  /* Reduced wiggle */
+    40%, 100% { transform: rotateZ(0); }
+}
+
+.wiggle {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.wiggle:hover {
+    transform: rotate(10deg);
 }
