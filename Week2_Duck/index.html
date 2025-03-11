@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capt. Quack Sparrow - Layout Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            background-color: #ffcc00;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .layout-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .layout-links a {
+            text-decoration: none;
+            background-color: #fff;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .layout-links a:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Capt. Quack Sparrow's Webpage</h1>
+    <p>Choose a layout to view the page:</p>
+    <div class="layout-links">
+        <a href="floatlayout.html">Float Layout</a>
+        <a href="gridlayout.html">Grid Layout</a>
+        <a href="flexboxlayout.html">Flexbox Layout</a>
+    </div>
+</body>
+</html>

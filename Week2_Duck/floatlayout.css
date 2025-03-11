@@ -1,0 +1,41 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.box {
+    width: 30%;
+    float: left;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid #000;
+    background-color: #f8c102;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+.box:hover {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
